@@ -8,16 +8,8 @@ import springBootApp.entities.UserDao;
 @Controller
 public class JspController {
 
-    @Autowired
-    private UserDao userDao;
-
-    @RequestMapping(value="/")
-    public String jspIndex() {
-        return "index";
-    }
-
     @RequestMapping(value="/jspTest")
     public String jspTest() {
-        return "test";
+        return "test/test";
     }
 }
